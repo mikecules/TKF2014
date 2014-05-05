@@ -1,0 +1,72 @@
+body {
+  background: url(../images/bg.jpg) no-repeat;
+}
+
+
+.animated-object {
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -ms-perspective: 1000;
+  perspective: 1000;
+}
+
+
+/***** Start of Card Carousel Widget Styles *****/
+.navigation-carousel-widget-container {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.navigation-carousel-card {
+  display:inline-block;
+  position: relative;
+  background-color: #fff;
+  border: solid 1px #555;
+  -moz-box-shadow:    2px 2px 2px 2px #000;
+  -webkit-box-shadow: 1px 1px 1px 1px #333;
+  box-shadow:         1px 1px 1px 1px #333;
+  margin-top: 10px;
+}
+
+.navigation-carousel-card.selected {
+  border: solid 5px hotpink;
+}
+
+.carousel-spacer {
+  display: inline-block;
+  width: 20px;
+  margin: 0 0;
+}
+
+.navigation-scroll-indicator {
+  position: absolute;
+  margin: 5px 2px 0px 2px;
+  background-color: #fff;
+  opacity: .9;
+  border-radius: 5px 5px;
+  height: 5px;
+  width: 20px;
+}
+
+.navigation-carousel-map {
+  display: inline-block;
+  list-style: none;
+  max-width: 1024px; /* for  below IE7 use `width: 660px;` */
+  margin: 1em auto;
+}
+
+.navigation-carousel-symbol {
+  display: inline-block;
+  margin-right: 32px;
+
+ }
+
+.navigation-carousel-symbol-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+/****** End of Card Carousel Widget Styles ******/
