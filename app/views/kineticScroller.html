@@ -1,0 +1,12 @@
+<div class="navigation-carousel-widget-container">
+    <div data-ng-transclude="" class="carousel-container-view"></div>
+    <div class="navigation-scroll-indicator animated-object"></div>
+    <ul class="navigation-carousel-map">
+        <li class="navigation-carousel-symbol" data-ng-repeat="card in cardDeck.cards">
+            <a data-ng-click="goToCard($index, true)" class="navigation-carousel-symbol-link">
+                <img ng-show="$index != cardDeck.selectedCardIndex" src="images/slide_nav_index_inactive.png" alt="Select card #{{$index + 1}}" title="Select card #{{$index + 1}}">
+                <img ng-show="$index == cardDeck.selectedCardIndex" src="images/slide_nav_index_active.png" alt="Card #{{$index + 1}} showing..." title="Card #{{$index + 1}} showing...">
+            </a>
+        </li>
+    </ul>
+</div>
