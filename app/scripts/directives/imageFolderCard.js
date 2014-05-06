@@ -1,3 +1,7 @@
+// Written by Michael Moncada
+// Code and CSS Adopted from 3D Thumbnail Hover Effects
+// http://tympanus.net/codrops/2012/06/18/3d-thumbnail-hover-effects/
+
 'use strict';
 
 angular.module('tkf2014App')
