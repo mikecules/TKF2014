@@ -53,10 +53,12 @@ angular.module('tkf2014App')
 
         scope.$watch(function() { return scope.cardWidth; }, function(cardWidth) {
 
-          if (angular.isDefined(cardWidth) && parseInt(cardWidth, 10) > 0) {
-            element.width(cardWidth);
+          var adjustedCardWidth = parseInt(cardWidth, 10) - 5 /* number of vertical divs */;
+
+          if (angular.isDefined(adjustedCardWidth) && adjustedCardWidth > 0) {
+            element.width(adjustedCardWidth);
             //console.log('width: ' + cardWidth + ' ' + element.width() );
-            kineticScroller.setMaxCardWidth(element.width());
+            kineticScroller.setMaxCardWidth(adjustedCardWidth);
 
           }
         });

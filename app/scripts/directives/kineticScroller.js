@@ -163,7 +163,6 @@
        cardWidth = scope.getCardWidth();
        carouselCardSpacerWidth = element.find('.carousel-spacer:first').width();
 
-       _recalcElementHeight();
        _recalculateScrollBarWidth();
      }
 
@@ -514,7 +513,6 @@
 
        // if there an expected count and that count is reached fire an event...
        if (criticalCardCount > 0 && newLength === criticalCardCount) {
-         _recalcElementHeight();
          scope.$emit(kCarouselEvents.CARD_COUNT_REACHED_EVENT, {width: scope.getCardWidth(), height: scope.getCardHeight()});
          criticalCardCount = 0;
          _init();
