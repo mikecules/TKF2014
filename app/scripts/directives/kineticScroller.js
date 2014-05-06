@@ -170,14 +170,6 @@
 
 
 
-
-     /////
-     function _recalcElementHeight() {
-       //element.height((element.height() + element.find('.navigation-carousel-map').height() + 40) + 'px');
-     }
-
-
-
      scope.cardAtIndex = function(i) {
        if (i >= 0 && i < scope.cardDeck.cards.length) {
          return  scope.cardDeck.cards[i];
@@ -194,10 +186,10 @@
        if (card !== null) {
          $.each(scope.cardDeck.cards, function(i, theCard) {
             if (i !== index) {
-              theCard.removeClass('selected');
+              theCard.removeClass('active');
             }
           });
-         card.addClass('selected');
+         card.addClass('active');
 
 
        }

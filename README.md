@@ -14,6 +14,6 @@ Recipes and Demo Source from 2014's University of Toronto's TechKnowFile Present
 * Make sure you are in the TKF2014 Repository Folder
  * npm install
  * bower install
- * grunt server
+ * grunt serve
 
 
